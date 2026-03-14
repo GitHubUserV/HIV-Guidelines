@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>HIV Guidelines - How to Protect Yourself Against HIV</title>
 <meta charset="UTF-8">
-<meta name="description" content="HIV prevention strategies: PEP, PrEP, condoms, and safe sex guidance.">
+<title>Ivona Health</title>
 <style>
 body {
-background-color: #add8e6;
 font-family: Arial, sans-serif;
+background-color: #f0f0f5;
 margin: 0;
 padding: 0;
 display: flex;
@@ -15,130 +14,136 @@ flex-direction: column;
 align-items: center;
 }
 
-.main-title {
-background-color: pink;
-color: black;
-padding: 30px 50px;
-margin-top: 20px;
+.top-logo {
+background-color: #6a5acd;
+color: white;
+width: 100%;
 text-align: center;
-font-size: 2em;
+padding: 20px 0;
+font-size: 36px;
 font-weight: bold;
-border-radius: 10px;
 }
 
-.categories {
+.headline {
+background-color: #ff99cc;
+color: black;
+text-align: center;
+padding: 15px 10px;
+margin: 10px 0 20px 0;
+font-size: 24px;
+font-weight: bold;
+border-radius: 8px;
+}
+
+.container {
 display: flex;
-justify-content: center;
-flex-wrap: wrap;
-margin-top: 50px;
-gap: 40px;
+justify-content: space-around;
+align-items: stretch;
 width: 100%;
 max-width: 1200px;
+gap: 20px;
 }
 
-.category {
-background-color: #f0f8ff;
-width: 250px;
-height: 300px;
+.square {
+background-color: #e6e6fa;
+flex: 1;
+min-width: 220px;
 display: flex;
 flex-direction: column;
 align-items: center;
-justify-content: center;
-border-radius: 15px;
-position: relative;
-text-decoration: none;
-color: black;
+justify-content: flex-start;
+border-radius: 10px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+cursor: pointer;
+transition: all 0.3s ease;
+text-align: center;
+padding: 30px 10px;
 }
 
-.category-rectangle {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-border: 3px solid #ccc;
-border-radius: 15px;
-pointer-events: none;
+.square:hover {
+transform: translateY(-3px);
+box-shadow: 0 5px 10px rgba(0,0,0,0.25);
 }
 
-.category-circle {
-width: 120px;
-height: 120px;
+.square img {
+width: 100px;
+height: 100px;
+margin-bottom: 15px;
+}
+
+.circle-button {
+background-color: #d1478f; /* Darker pink for contrast */
+color: white;
+border: none;
 border-radius: 50%;
-background-color: #90ee90;
+width: 80px;
+height: 80px;
+font-size: 16px;
+font-weight: bold;
 display: flex;
 align-items: center;
 justify-content: center;
-font-weight: bold;
-text-align: center;
-margin-bottom: 15px;
-transition: transform 0.2s;
-position: relative;
-z-index: 1;
-}
-
-.category-circle:hover {
-transform: scale(1.1);
 cursor: pointer;
+margin-bottom: 15px;
+text-shadow: 1px 1px 2px rgba(0,0,0,0.4); /* subtle shadow for pop */
 }
 
-.category img {
-width: 80px;
-height: 80px;
-object-fit: contain;
-margin-bottom: 10px;
-position: relative;
-z-index: 1;
-}
-
-.category-text {
+.description {
 font-weight: bold;
+font-size: 14px;
+color: black;
 text-align: center;
-text-decoration: none;
-position: relative;
-z-index: 1;
+max-width: 90%;
 }
 
+/* Responsive */
+@media (max-width: 1000px) {
+.container {
+flex-wrap: wrap;
+}
+.square {
+flex: 1 1 45%;
+margin-bottom: 20px;
+}
+}
+@media (max-width: 600px) {
+.square {
+flex: 1 1 100%;
+}
+}
 </style>
 </head>
 <body>
 
-<div class="main-title">
-HIV Guidelines<br>
-How to Protect Yourself Against HIV
-</div>
+<div class="top-logo">Ivona Health</div>
+<div class="headline">HIV Guidelines: How To Protect Yourself Against HIV</div>
 
-<div class="categories">
+<div class="container">
 
-<a href="pep2.html" class="category">
-<div class="category-rectangle"></div>
-<div class="category-circle">PEP</div>
+<div class="square" onclick="window.location.href='pep2.html'">
 <img src="pep.png" alt="PEP">
-<div class="category-text">Post-Exposure Prophylaxis</div>
-</a>
-
-<a href="prep2.html" class="category">
-<div class="category-rectangle"></div>
-<div class="category-circle">PrEP</div>
-<img src="prep.png" alt="PrEP">
-<div class="category-text">Pre-Exposure Prophylaxis</div>
-</a>
-
-<a href="condoms2.html" class="category">
-<div class="category-rectangle"></div>
-<div class="category-circle">Condoms</div>
-<img src="condoms.png" alt="Condoms">
-<div class="category-text">Safe Barrier Protection</div>
-</a>
-
-<a href="safesex2.html" class="category">
-<div class="category-rectangle"></div>
-<div class="category-circle">Safe Sex</div>
-<img src="safesex.png" alt="Safe Sex">
-<div class="category-text">Healthy Practices</div>
-</a>
-
+<div class="circle-button">PEP</div>
+<div class="description">Use PEP after potential exposure.</div>
 </div>
 
+<div class="square" onclick="window.location.href='prep2.html'">
+<img src="prep.png" alt="PrEP">
+<div class="circle-button">PrEP</div>
+<div class="description">PrEP reduces HIV risk if taken consistently.</div>
+</div>
+
+<div class="square" onclick="window.location.href='condoms2.html'">
+<img src="condoms.png" alt="Condoms">
+<div class="circle-button">Condoms</div>
+<div class="description">Use condoms to protect yourself and partners.</div>
+</div>
+
+<div class="square" onclick="window.location.href='safesex2.html'">
+<img src="safesex.png" alt="Safe Sex">
+<div class="circle-button">Safe Sex</div>
+<div class="description">Practice safe sex to minimize HIV risk.</div>
+</div>
+
+</div>
 </body>
 </html>
