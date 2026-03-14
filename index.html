@@ -1,190 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>HIV Guidelines</title>
+<meta charset="UTF-8">
+<title>HIV Guidelines: How to Protect Yourself Against HIV</title>
+<meta name="description" content="Learn about PEP, PrEP, condoms, and safe sex strategies to prevent HIV. Informative and interactive guides for staying safe.">
 <style>
 body {
-background-color: #cce7ff;
+background-color: #cce0ff;
 font-family: Arial, sans-serif;
+text-align: center;
 color: #333;
 margin: 0;
 padding: 0;
-display: flex;
-flex-direction: column;
-align-items: center;
 }
-
-.title-box {
+.header {
 background-color: #ff66b2;
 color: black;
-padding: 30px 40px;
-margin-top: 60px;
+padding: 30px 20px;
+margin-bottom: 50px;
+display: inline-block;
 border-radius: 8px;
-text-align: center;
-font-size: 36px;
-font-weight: bold;
-max-width: 90%;
 }
-
-.strategies-grid {
+.container {
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
-gap: 40px;
-margin: 60px 0;
+gap: 30px;
+padding: 20px;
 }
-
-.strategy-wrapper {
+.category {
 position: relative;
-width: 300px;
-height: 400px;
-}
-
-.strategy-background {
-position: absolute;
-width: 100%;
-height: 100%;
-background-color: #99ccff;
-border-radius: 12px;
-}
-
-.strategy-card {
-position: relative;
-height: 100%;
+width: 220px;
+height: 300px;
+background-color: #e6f2ff;
+border-radius: 8px;
 display: flex;
 flex-direction: column;
-justify-content: center;
 align-items: center;
-}
-
-.strategy-card a {
-text-decoration: none;
-color: #333;
+justify-content: center;
 text-align: center;
-display: flex;
-flex-direction: column;
-align-items: center;
+padding: 10px;
 }
-
-.strategy-circle {
-width: 130px;
-height: 130px;
-background-color: #66b2a3;
-border-radius: 50%;
-display: flex;
-justify-content: center;
-align-items: center;
-color: #fff;
-font-weight: bold;
-font-size: 20px;
-margin-bottom: 15px;
-transition: transform 0.3s;
-}
-
-.strategy-circle:hover {
-transform: scale(1.15);
-}
-
-.strategy-text {
-font-size: 16px;
-font-weight: bold;
-max-width: 250px;
-margin-bottom: 10px;
-}
-
-.strategy-image {
-width: 120px;
-height: 120px;
-object-fit: contain;
-display: block;
-margin: 0 auto;
-}
-
-@media (max-width: 900px) {
-.strategy-wrapper {
-width: 45%;
-height: 380px;
-}
-.strategy-circle {
-width: 120px;
-height: 120px;
-font-size: 18px;
-}
-.strategy-image {
+.circle {
 width: 100px;
 height: 100px;
+border-radius: 50%;
+background-color: #99ccff;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: bold;
+margin-bottom: 15px;
+transition: transform 0.3s;
+cursor: pointer;
 }
+.circle:hover {
+transform: scale(1.15);
 }
-
-@media (max-width: 500px) {
-.strategy-wrapper {
-width: 80%;
-height: 360px;
+.category img {
+width: 80px;
+height: 80px;
+object-fit: contain;
+margin-bottom: 10px;
 }
-.strategy-circle {
-width: 110px;
-height: 110px;
-font-size: 16px;
-}
-.strategy-image {
-width: 90px;
-height: 90px;
-}
+.category a {
+text-decoration: none;
+color: black;
+font-weight: bold;
 }
 </style>
 </head>
 <body>
 
-<div class="title-box">
-HIV Guidelines: How to Protect Yourself Against HIV
+<div class="header">
+<h1>HIV Guidelines</h1>
+<h2>How to Protect Yourself Against HIV</h2>
 </div>
 
-<div class="strategies-grid">
-
-<div class="strategy-wrapper">
-<div class="strategy-background"></div>
-<div class="strategy-card">
-<a href="pep2.html">
-<div class="strategy-circle">PEP</div>
-<div class="strategy-text">Post-exposure prophylaxis taken after potential exposure to HIV.</div>
-<img src="pep.png" alt="PEP" class="strategy-image">
-</a>
+<div class="container">
+<div class="category">
+<img src="pep.png" alt="PEP">
+<a href="pep2.html"><div class="circle">PEP</div></a>
 </div>
+<div class="category">
+<img src="prep.png" alt="PrEP">
+<a href="prep2.html"><div class="circle">PrEP</div></a>
 </div>
-
-<div class="strategy-wrapper">
-<div class="strategy-background"></div>
-<div class="strategy-card">
-<a href="prep2.html">
-<div class="strategy-circle">PrEP</div>
-<div class="strategy-text">Pre-exposure prophylaxis taken regularly to prevent HIV infection.</div>
-<img src="prep.png" alt="PrEP" class="strategy-image">
-</a>
+<div class="category">
+<img src="condoms.png" alt="Condoms">
+<a href="condoms2.html"><div class="circle">Condoms</div></a>
 </div>
+<div class="category">
+<img src="safesex.png" alt="Safe Sex">
+<a href="safesex2.html"><div class="circle">Safe Sex</div></a>
 </div>
-
-<div class="strategy-wrapper">
-<div class="strategy-background"></div>
-<div class="strategy-card">
-<a href="condoms2.html">
-<div class="strategy-circle">Condoms</div>
-<div class="strategy-text">Using condoms reduces the risk of HIV and other STIs.</div>
-<img src="condoms.png" alt="Condoms" class="strategy-image">
-</a>
-</div>
-</div>
-
-<div class="strategy-wrapper">
-<div class="strategy-background"></div>
-<div class="strategy-card">
-<a href="safesex2.html">
-<div class="strategy-circle">Safe Sex</div>
-<div class="strategy-text">Practicing safer sexual behaviors including regular testing.</div>
-<img src="safesex.png" alt="Safe Sex" class="strategy-image">
-</a>
-</div>
-</div>
-
 </div>
 
 </body>
