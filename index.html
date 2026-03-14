@@ -1,99 +1,136 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>HIV Guidelines - How to Protect Yourself Against HIV</title>
 <meta charset="UTF-8">
-<title>HIV Guidelines: How to Protect Yourself Against HIV</title>
-<meta name="description" content="Learn about PEP, PrEP, condoms, and safe sex strategies to prevent HIV. Informative and interactive guides for staying safe.">
+<meta name="description" content="HIV prevention strategies: PEP, PrEP, condoms, and safe sex guidance.">
 <style>
 body {
-background-color: #cce0ff;
+background-color: #add8e6;
 font-family: Arial, sans-serif;
-text-align: center;
-color: #333;
 margin: 0;
 padding: 0;
-}
-.header {
-background-color: #ff66b2;
-color: black;
-padding: 30px 20px;
-margin-bottom: 50px;
-display: inline-block;
-border-radius: 8px;
-}
-.container {
 display: flex;
-flex-wrap: wrap;
-justify-content: center;
-gap: 30px;
-padding: 20px;
+flex-direction: column;
+align-items: center;
 }
+
+.main-title {
+background-color: pink;
+color: black;
+padding: 30px 50px;
+margin-top: 20px;
+text-align: center;
+font-size: 2em;
+font-weight: bold;
+border-radius: 10px;
+}
+
+.categories {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+margin-top: 50px;
+gap: 40px;
+width: 100%;
+max-width: 1200px;
+}
+
 .category {
-position: relative;
-width: 220px;
+background-color: #f0f8ff;
+width: 250px;
 height: 300px;
-background-color: #e6f2ff;
-border-radius: 8px;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-text-align: center;
-padding: 10px;
+border-radius: 15px;
+position: relative;
+text-decoration: none;
+color: black;
 }
-.circle {
-width: 100px;
-height: 100px;
+
+.category-circle {
+width: 120px;
+height: 120px;
 border-radius: 50%;
-background-color: #99ccff;
+background-color: #90ee90;
 display: flex;
 align-items: center;
 justify-content: center;
 font-weight: bold;
+text-align: center;
 margin-bottom: 15px;
-transition: transform 0.3s;
+transition: transform 0.2s;
+}
+
+.category-circle:hover {
+transform: scale(1.1);
 cursor: pointer;
 }
-.circle:hover {
-transform: scale(1.15);
-}
+
 .category img {
 width: 80px;
 height: 80px;
 object-fit: contain;
 margin-bottom: 10px;
 }
-.category a {
-text-decoration: none;
-color: black;
+
+.category-text {
 font-weight: bold;
+text-align: center;
+text-decoration: none;
+}
+
+.category-rectangle {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border: 3px solid #ccc;
+border-radius: 15px;
+pointer-events: none;
 }
 </style>
 </head>
 <body>
 
-<div class="header">
-<h1>HIV Guidelines</h1>
-<h2>How to Protect Yourself Against HIV</h2>
+<div class="main-title">
+HIV Guidelines<br>
+How to Protect Yourself Against HIV
 </div>
 
-<div class="container">
-<div class="category">
+<div class="categories">
+
+<a href="pep2.html" class="category">
+<div class="category-rectangle"></div>
+<div class="category-circle">PEP</div>
 <img src="pep.png" alt="PEP">
-<a href="pep2.html"><div class="circle">PEP</div></a>
-</div>
-<div class="category">
+<div class="category-text">Post-Exposure Prophylaxis</div>
+</a>
+
+<a href="prep2.html" class="category">
+<div class="category-rectangle"></div>
+<div class="category-circle">PrEP</div>
 <img src="prep.png" alt="PrEP">
-<a href="prep2.html"><div class="circle">PrEP</div></a>
-</div>
-<div class="category">
+<div class="category-text">Pre-Exposure Prophylaxis</div>
+</a>
+
+<a href="condoms2.html" class="category">
+<div class="category-rectangle"></div>
+<div class="category-circle">Condoms</div>
 <img src="condoms.png" alt="Condoms">
-<a href="condoms2.html"><div class="circle">Condoms</div></a>
-</div>
-<div class="category">
+<div class="category-text">Safe Barrier Protection</div>
+</a>
+
+<a href="safesex2.html" class="category">
+<div class="category-rectangle"></div>
+<div class="category-circle">Safe Sex</div>
 <img src="safesex.png" alt="Safe Sex">
-<a href="safesex2.html"><div class="circle">Safe Sex</div></a>
-</div>
+<div class="category-text">Healthy Practices</div>
+</a>
+
 </div>
 
 </body>
