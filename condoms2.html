@@ -1,67 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Condoms</title>
+<meta charset="UTF-8">
+<title>Ivona Health - Condoms</title>
 <style>
 body {
-background-color: #cce7ff;
 font-family: Arial, sans-serif;
-text-align: center;
-color: #333;
+background-color: #f0f0f5;
 margin: 0;
 padding: 0;
-}
-
-.main-circle {
-width: 200px;
-height: 200px;
-background-color: #66b2a3;
-border-radius: 50%;
 display: flex;
-justify-content: center;
+flex-direction: column;
 align-items: center;
-color: #fff;
-font-weight: bold;
-font-size: 24px;
-margin: 60px auto 20px auto;
 }
 
-.content {
-max-width: 800px;
-margin: 0 auto 60px auto;
-font-size: 18px;
-line-height: 1.6;
-color: #333;
-}
-
-.back-button {
-display: inline-block;
-padding: 12px 24px;
-margin-top: 40px;
-background-color: #ff66b2;
+.top-logo {
+background-color: #6a5acd;
 color: white;
+width: 100%;
+text-align: center;
+padding: 20px 0;
+font-size: 36px;
 font-weight: bold;
-text-decoration: none;
-border-radius: 8px;
-transition: background-color 0.3s, transform 0.2s;
 }
 
-.back-button:hover {
-background-color: #ff3399;
-transform: scale(1.05);
+.container {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 90%;
+margin-top: 50px;
+}
+
+.square {
+background-color: #e6e6fa;
+width: 100%;
+max-width: 300px;
+display: flex;
+flex-direction: column;
+align-items: center;
+border-radius: 10px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+cursor: pointer;
+transition: all 0.3s ease;
+text-align: center;
+padding: 30px 10px;
+margin-bottom: 50px;
+}
+
+.square:hover {
+transform: translateY(-3px);
+box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+}
+
+.circle-button {
+background-color: #d1478f;
+color: white;
+border: none;
+border-radius: 50%;
+width: 100px;
+height: 100px;
+font-size: 16px;
+font-weight: bold;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+margin-bottom: 15px;
+text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+
+.description {
+font-weight: bold;
+font-size: 14px;
+color: black;
+text-align: center;
+max-width: 90%;
+margin-bottom: 20px;
+}
+
+.return-button {
+background-color: #6a5acd;
+color: white;
+border: none;
+padding: 10px 20px;
+font-size: 16px;
+font-weight: bold;
+border-radius: 5px;
+cursor: pointer;
+margin: 50px 0 30px 0;
+transition: all 0.2s ease;
+}
+
+.return-button:hover {
+background-color: #5040a0;
 }
 </style>
 </head>
 <body>
 
-<div class="main-circle">Condoms</div>
+<div class="top-logo">Ivona Health</div>
 
-<div class="content">
-<h1>Condoms</h1>
-<p>Using condoms during sexual activity is one of the most effective ways to prevent HIV and other sexually transmitted infections (STIs). Condoms should be used consistently and correctly for maximum protection.</p>
-
-<a href="index.html" class="back-button">Back to Main Page</a>
+<div class="container">
+<div class="square" onclick="window.open('https://www.amazon.com/s?k=condoms','_blank')">
+<div class="circle-button">Condoms</div>
+<div class="description">Order condoms safely and discreetly online to protect yourself and your partners.</div>
 </div>
+</div>
+
+<!-- Return to main page with correct capital letters -->
+<button class="return-button" onclick="window.location.href='LandingPageHIV2.html'">← Return to Main Page</button>
 
 </body>
 </html>
